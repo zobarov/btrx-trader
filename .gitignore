@@ -18,3 +18,4 @@ package-lock.json
 secret
 private
 secret/secret_keys.properties
+secret/api_keys.properties

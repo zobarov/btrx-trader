@@ -16,3 +16,11 @@ sudo service iptables save
 
 ---from anywhere your pem is:
 ssh -i "btrx-trader-simple-v1.pem" ec2-user@ec2-52-208-30-7.eu-west-1.compute.amazonaws.com
+
+
+
+#Used modules:
+npm install properties-reader --save
+npm install node-schedule --save
+npm install request --save
+npm install nonce --save
