@@ -11,3 +11,10 @@ node_modules/
 
 #VsCode
 .vscode
+
+package-lock.json
+
+#___Hide secrets___
+secret
+private
+secret/secret_keys.properties

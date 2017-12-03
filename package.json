@@ -1,16 +1,26 @@
 {
   "name": "btrx-trader",
   "version": "1.0.0",
-  "description": "",
+  "description": "---Enable ip4 forwarding to set to 1:",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
-  "author": "",
+  "author": "AlexGera",
   "license": "ISC",
   "dependencies": {
     "node-schedule": "^1.2.5",
     "nonce": "^1.0.4",
+    "properties-reader": "0.0.16",
     "request": "^2.83.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zobarov/btrx-trader.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zobarov/btrx-trader/issues"
+  },
+  "homepage": "https://github.com/zobarov/btrx-trader#readme"
 }
