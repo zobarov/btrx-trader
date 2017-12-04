@@ -10,10 +10,12 @@
   "author": "AlexGera",
   "license": "ISC",
   "dependencies": {
+    "config": "^1.28.1",
     "node-schedule": "^1.2.5",
     "nonce": "^1.0.4",
     "properties-reader": "0.0.16",
-    "request": "^2.83.0"
+    "request": "^2.83.0",
+    "winston": "^2.4.0"
   },
   "repository": {
     "type": "git",

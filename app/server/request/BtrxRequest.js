@@ -2,6 +2,9 @@
 
 const request = require('request');
 const crypto = require('crypto');
+const n = require('nonce')();
+
+const config = require('config');
 
 var PropertiesReader = require('properties-reader');
 var apiKeyProperties = PropertiesReader('./secret/api_keys.properties');
@@ -9,10 +12,11 @@ var secretKeyProperties = PropertiesReader('./secret/secret_keys.properties');
 var generalProperties = PropertiesReader('./secret/general.properties');
 
 const baseApiUrl = generalProperties.read('trade.base.api.url');
+
 const apiKey =  apiKeyProperties.read('tradelimit.api.key');
 const secretKey = secretKeyProperties.read('tradelimit.secret.key');
 
-const n = require('nonce')();
+
 
 class BtrxRequest {
   constructor(name, path) {

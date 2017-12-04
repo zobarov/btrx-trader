@@ -1,6 +1,7 @@
 'use strict'
 
 const http = require('http');
+const logger = require('./app/server/util/logger/logger');
 
 const BasicSellOnLevel = require('./app/server/ohlamon/basic/BasicSellOnLevel');
 
@@ -13,7 +14,7 @@ function webserver(req, res){
         return;
     }
 
-    console.log('Webserver is running');
+    logger.info('Starting server tasks...');
     var basicSellOnLevelOhlamon = new BasicSellOnLevel('BasicZEC', '*/30 * * * * *');
     basicSellOnLevelOhlamon.startOhlamonModel('ETH-ZEC', true);
 

@@ -20,6 +20,7 @@ ssh -i "btrx-trader-simple-v1.pem" ec2-user@ec2-52-208-30-7.eu-west-1.compute.am
 
 
 #Used modules:
+npm install winston --save
 npm install properties-reader --save
 npm install node-schedule --save
 npm install request --save

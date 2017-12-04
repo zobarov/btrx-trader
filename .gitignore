@@ -13,6 +13,7 @@ node_modules/
 .vscode
 
 package-lock.json
+logs
 
 #___Hide secrets___
 secret
